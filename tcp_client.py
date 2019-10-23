@@ -2,10 +2,11 @@
 
 import socket
 import os
-from time import sleep
+import ipaddress
 
 try: 
         TCP_IP = input("Enter Destination IP:")
+        ipaddress.ip_network('TCP_IP')
 try:
         TCP_PORT = input("Enter Destination Port:")
 
