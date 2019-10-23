@@ -1,15 +1,13 @@
  #!/usr/bin/env python 
 
 import socket
+import os
+from time import sleep
 
 try: 
-        TCP_IP = "100.115.92.196" 
-except NameError:
-        TCP_IP = "127.0.0.1"
+        TCP_IP = input("Enter Destination IP:")
 try:
-        TCP_PORT = 80
-except NameError:
-        TCP_PORT = 5005
+        TCP_PORT = input("Enter Destination Port:")
 
 BUFFER_SIZE = 1024
 MESSAGE = "Hello, World!"
