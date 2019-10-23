@@ -10,7 +10,7 @@ try:
 except NameError:
         TCP_IP = "127.0.0.1"
 try:
-        TCP_PORT = input("Enter Destination Port:")
+        TCP_PORT = int(input("Enter Destination Port:"))
 except NameError:
         TCP_PORT = 8080
 
