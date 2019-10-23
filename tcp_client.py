@@ -6,7 +6,7 @@ import ipaddress
 
 try: 
         TCP_IP = input("Enter Destination IP:")
-        ipaddress.ip_network('TCP_IP')
+        ipaddress.ip_network(TCP_IP)
 except NameError:
         TCP_IP = "127.0.0.1"
 try:
